@@ -22,7 +22,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.BLAZE_FLUID.get());
                         output.accept(ModItems.EMPTY_SEAL.get());
                         output.accept(ModItems.EXPOSED_WIRE.get());
-
+                        output.accept(ModItems.SEAL_FRAGMENT.get());
 
                     })
                     .build());

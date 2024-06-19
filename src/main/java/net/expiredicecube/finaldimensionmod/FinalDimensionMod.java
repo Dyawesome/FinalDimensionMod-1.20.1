@@ -49,6 +49,7 @@ public class FinalDimensionMod {
             event.accept(ModItems.BLAZE_FLUID);
             event.accept(ModItems.EMPTY_SEAL);
             event.accept(ModItems.EXPOSED_WIRE);
+            event.accept(ModItems.SEAL_FRAGMENT);
             //Testing commits and push
         }
     }

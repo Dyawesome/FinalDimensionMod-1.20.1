@@ -26,6 +26,9 @@ public class ModItems {
     public static final RegistryObject<Item> EXPOSED_WIRE = ITEMS.register("exposed_wire",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> SEAL_FRAGMENT = ITEMS.register("seal_fragment",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

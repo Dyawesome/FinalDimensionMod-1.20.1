@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "finaldimensionmod:seal_fragment"
+    }
+  },
+  "result": {
+    "item": "finaldimensionmod:empty_seal",
+    "count": 1
+  }
+}
