@@ -21,6 +21,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.PHANTOM_SILK.get());
                         output.accept(ModItems.BLAZE_FLUID.get());
                         output.accept(ModItems.EMPTY_SEAL.get());
+                        output.accept(ModItems.EXPOSED_WIRE.get());
+
 
                     })
                     .build());
