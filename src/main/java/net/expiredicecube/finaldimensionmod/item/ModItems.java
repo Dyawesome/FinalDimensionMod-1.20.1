@@ -23,10 +23,16 @@ public class ModItems {
     public static final RegistryObject<Item> EMPTY_SEAL = ITEMS.register("empty_seal",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> ENHANCED_PEARL = ITEMS.register("enhanced_pearl",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> EXPOSED_WIRE = ITEMS.register("exposed_wire",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> SEAL_FRAGMENT = ITEMS.register("seal_fragment",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CELESTITE_INGOT = ITEMS.register("celestite_ingot",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

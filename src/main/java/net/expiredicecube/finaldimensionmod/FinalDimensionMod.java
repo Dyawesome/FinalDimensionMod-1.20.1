@@ -1,6 +1,7 @@
 package net.expiredicecube.finaldimensionmod;
 
 import com.mojang.logging.LogUtils;
+import net.expiredicecube.finaldimensionmod.block.ModBlocks;
 import net.expiredicecube.finaldimensionmod.item.ModCreativeModTabs;
 import net.expiredicecube.finaldimensionmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -28,6 +29,7 @@ public class FinalDimensionMod {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -48,9 +50,12 @@ public class FinalDimensionMod {
             event.accept(ModItems.ECHO_DUST);
             event.accept(ModItems.BLAZE_FLUID);
             event.accept(ModItems.EMPTY_SEAL);
+            event.accept(ModItems.ENHANCED_PEARL);
             event.accept(ModItems.EXPOSED_WIRE);
             event.accept(ModItems.SEAL_FRAGMENT);
-            //Testing commits and push
+            event.accept(ModItems.CELESTITE_INGOT);
+
+
         }
     }
 

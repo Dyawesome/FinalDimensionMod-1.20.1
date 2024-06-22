@@ -1,10 +1,13 @@
 package net.expiredicecube.finaldimensionmod.item;
 
 import net.expiredicecube.finaldimensionmod.FinalDimensionMod;
+import net.expiredicecube.finaldimensionmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -21,8 +24,14 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.PHANTOM_SILK.get());
                         output.accept(ModItems.BLAZE_FLUID.get());
                         output.accept(ModItems.EMPTY_SEAL.get());
+                        output.accept(ModItems.ENHANCED_PEARL.get());
                         output.accept(ModItems.EXPOSED_WIRE.get());
                         output.accept(ModItems.SEAL_FRAGMENT.get());
+                        output.accept(ModItems.CELESTITE_INGOT.get());
+
+                        output.accept(Items.ENDER_EYE);
+
+                        output.accept(ModBlocks.GLISTENING_OBSIDIAN.get());
 
                     })
                     .build());
