@@ -3,28 +3,28 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:emerald"
+      "item": "minecraft:lapis_lazuli"
     },
     {
-      "item": "minecraft:emerald"
+      "item": "minecraft:lapis_lazuli"
     },
     {
-      "item": "minecraft:emerald"
+      "item": "minecraft:lapis_lazuli"
     },
     {
-      "item": "minecraft:emerald"
+      "item": "minecraft:lapis_lazuli"
     },
     {
-      "item": "minecraft:amethyst_shard"
+      "item": "finaldimensionmod:celestite_splinter"
     },
     {
-      "item": "minecraft:amethyst_shard"
+      "item": "finaldimensionmod:celestite_splinter"
     },
     {
-      "item": "minecraft:amethyst_shard"
+      "item": "finaldimensionmod:celestite_splinter"
     },
     {
-      "item": "minecraft:amethyst_shard"
+      "item": "finaldimensionmod:celestite_splinter"
     }
   ],
   "result": {

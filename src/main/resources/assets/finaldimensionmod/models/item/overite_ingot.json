@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "finaldimensionmod:item/overite_ingot"
+  }
+}

@@ -46,15 +46,16 @@ public class FinalDimensionMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.PHANTOM_SILK);
-            event.accept(ModItems.ECHO_DUST);
             event.accept(ModItems.BLAZE_FLUID);
+            event.accept(ModItems.CELESTITE_INGOT);
+            event.accept(ModItems.CELESTITE_SPLINTER);
+            event.accept(ModItems.ECHO_DUST);
             event.accept(ModItems.EMPTY_SEAL);
             event.accept(ModItems.ENHANCED_PEARL);
             event.accept(ModItems.EXPOSED_WIRE);
+            event.accept(ModItems.OVERITE_INGOT);
+            event.accept(ModItems.PHANTOM_SILK);
             event.accept(ModItems.SEAL_FRAGMENT);
-            event.accept(ModItems.CELESTITE_INGOT);
-
 
         }
     }

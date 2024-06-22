@@ -20,14 +20,16 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ECHO_DUST.get()))
                     .title(Component.translatable("creativetab.new_items_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.ECHO_DUST.get());
-                        output.accept(ModItems.PHANTOM_SILK.get());
                         output.accept(ModItems.BLAZE_FLUID.get());
+                        output.accept(ModItems.CELESTITE_INGOT.get());
+                        output.accept(ModItems.CELESTITE_SPLINTER.get());
+                        output.accept(ModItems.ECHO_DUST.get());
                         output.accept(ModItems.EMPTY_SEAL.get());
                         output.accept(ModItems.ENHANCED_PEARL.get());
                         output.accept(ModItems.EXPOSED_WIRE.get());
+                        output.accept(ModItems.OVERITE_INGOT.get());
+                        output.accept(ModItems.PHANTOM_SILK.get());
                         output.accept(ModItems.SEAL_FRAGMENT.get());
-                        output.accept(ModItems.CELESTITE_INGOT.get());
 
                         output.accept(Items.ENDER_EYE);
 
