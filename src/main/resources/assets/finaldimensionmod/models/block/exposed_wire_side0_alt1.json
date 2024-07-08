@@ -1,0 +1,6 @@
+{
+  "parent": "finaldimensionmod:block/exposed_wire_side_alt",
+  "textures": {
+    "line": "finaldimensionmod:block/exposed_wire_line1"
+  }
+}

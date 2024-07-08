@@ -56,6 +56,8 @@ public class FinalDimensionMod {
             event.accept(ModItems.OVERITE_INGOT);
             event.accept(ModItems.PHANTOM_SILK);
             event.accept(ModItems.SEAL_FRAGMENT);
+            event.accept(ModItems.EXPOSED_WIRE);
+            event.accept(ModBlocks.GLISTENING_OBSIDIAN);
 
         }
     }

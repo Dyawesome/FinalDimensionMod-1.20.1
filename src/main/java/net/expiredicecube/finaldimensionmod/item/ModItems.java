@@ -1,8 +1,14 @@
 package net.expiredicecube.finaldimensionmod.item;
 
 import net.expiredicecube.finaldimensionmod.FinalDimensionMod;
+import net.expiredicecube.finaldimensionmod.block.ModBlocks;
+import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.EnderpearlItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -28,10 +34,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ENHANCED_PEARL = ITEMS.register("enhanced_pearl",
-            () -> new Item(new Item.Properties()));
+            () -> new EnderpearlItem(new Item.Properties()));
 
     public static final RegistryObject<Item> EXPOSED_WIRE = ITEMS.register("exposed_wire",
-            () -> new Item(new Item.Properties()));
+            () -> new ItemNameBlockItem(ModBlocks.EXPOSED_WIRE_WIRE.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> OVERITE_INGOT = ITEMS.register("overite_ingot",
             () -> new Item(new Item.Properties()));
