@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "finaldimensionmod:raw_jade_block"
+    }
+  ],
+  "result": {
+    "item": "finaldimensionmod:raw_jade",
+    "count": 9
+  }
+}

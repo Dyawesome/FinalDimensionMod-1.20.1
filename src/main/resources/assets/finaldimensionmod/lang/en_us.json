@@ -6,11 +6,15 @@
   "item.finaldimensionmod.empty_seal": "Empty Seal",
   "item.finaldimensionmod.enhanced_pearl": "Enhanced Pearl",
   "item.finaldimensionmod.exposed_wire": "Exposed Wire",
+  "item.finaldimensionmod.jade": "Jade",
   "item.finaldimensionmod.overite_ingot": "Overite Ingot",
   "item.finaldimensionmod.phantom_silk": "Phantom Silk",
+  "item.finaldimensionmod.raw_jade": "Raw Jade",
   "item.finaldimensionmod.seal_fragment": "Seal Fragment",
 
   "block.finaldimensionmod.glistening_obsidian": "Glistening Obsidian",
+  "block.finaldimensionmod.raw_jade_block": "Raw Jade Block",
+  "block.finaldimensionmod.jade_block": "Jade Block",
   "block.finaldimensionmod.exposed_wire_wire": "Exposed Wire Wire",
 
 

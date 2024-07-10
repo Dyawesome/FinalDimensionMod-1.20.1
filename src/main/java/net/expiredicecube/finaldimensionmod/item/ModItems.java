@@ -2,13 +2,9 @@ package net.expiredicecube.finaldimensionmod.item;
 
 import net.expiredicecube.finaldimensionmod.FinalDimensionMod;
 import net.expiredicecube.finaldimensionmod.block.ModBlocks;
-import net.minecraft.client.renderer.item.ItemProperties;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.EnderpearlItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -39,10 +35,16 @@ public class ModItems {
     public static final RegistryObject<Item> EXPOSED_WIRE = ITEMS.register("exposed_wire",
             () -> new ItemNameBlockItem(ModBlocks.EXPOSED_WIRE_WIRE.get(), new Item.Properties()));
 
+    public static final RegistryObject<Item> JADE = ITEMS.register("jade",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> OVERITE_INGOT = ITEMS.register("overite_ingot",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> PHANTOM_SILK = ITEMS.register("phantom_silk",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RAW_JADE = ITEMS.register("raw_jade",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> SEAL_FRAGMENT = ITEMS.register("seal_fragment",

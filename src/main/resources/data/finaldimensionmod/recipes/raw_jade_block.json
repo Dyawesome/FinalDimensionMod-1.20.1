@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "finaldimensionmod:raw_jade"
+    }
+  },
+  "result": {
+    "item": "finaldimensionmod:raw_jade_block",
+    "count": 1
+  }
+}

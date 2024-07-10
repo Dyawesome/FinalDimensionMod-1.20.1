@@ -53,11 +53,16 @@ public class FinalDimensionMod {
             event.accept(ModItems.EMPTY_SEAL);
             event.accept(ModItems.ENHANCED_PEARL);
             event.accept(ModItems.EXPOSED_WIRE);
+            event.accept(ModItems.JADE);
             event.accept(ModItems.OVERITE_INGOT);
             event.accept(ModItems.PHANTOM_SILK);
+            event.accept(ModItems.RAW_JADE);
             event.accept(ModItems.SEAL_FRAGMENT);
             event.accept(ModItems.EXPOSED_WIRE);
+
             event.accept(ModBlocks.GLISTENING_OBSIDIAN);
+            event.accept(ModBlocks.RAW_JADE_BLOCK);
+            event.accept(ModBlocks.JADE_BLOCK);
 
         }
     }
