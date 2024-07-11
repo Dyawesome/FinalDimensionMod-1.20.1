@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "finaldimensionmod:raw_jade_block"
+      "item": "finaldimensionmod:raw_lithium_block"
     }
   ],
   "result": {
-    "item": "finaldimensionmod:raw_jade",
+    "item": "finaldimensionmod:raw_lithium",
     "count": 9
   }
 }

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "finaldimensionmod:raw_jade_block"
+          "name": "finaldimensionmod:lithium_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "finaldimensionmod:blocks/raw_jade_block"
+  "random_sequence": "finaldimensionmod:blocks/lithium_block"
 }

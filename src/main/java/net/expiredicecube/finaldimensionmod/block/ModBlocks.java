@@ -21,17 +21,21 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, FinalDimensionMod.MOD_ID);
 
+    public static final RegistryObject<Block> EXPOSED_WIRE_WIRE = BLOCKS.register("exposed_wire_wire",
+            () -> new RedStoneWireBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_WIRE).noCollission()));
+
     public static final RegistryObject<Block> GLISTENING_OBSIDIAN = registerBlock("glistening_obsidian",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).sound(SoundType.GILDED_BLACKSTONE)));
-
-    public static final RegistryObject<Block> RAW_JADE_BLOCK = registerBlock("raw_jade_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
 
     public static final RegistryObject<Block> JADE_BLOCK = registerBlock("jade_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
 
-    public static final RegistryObject<Block> EXPOSED_WIRE_WIRE = BLOCKS.register("exposed_wire_wire",
-            () -> new RedStoneWireBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_WIRE).noCollission()));
+    public static final RegistryObject<Block> LITHIUM_BLOCK = registerBlock("lithium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> RAW_LITHIUM_BLOCK = registerBlock("raw_lithium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

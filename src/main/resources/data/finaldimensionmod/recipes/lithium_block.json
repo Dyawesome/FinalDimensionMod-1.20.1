@@ -3,19 +3,16 @@
   "category": "misc",
   "pattern": [
     "###",
-    "#S#",
+    "###",
     "###"
   ],
   "key": {
     "#": {
-      "item": "finaldimensionmod:seal_fragment"
-    },
-    "S": {
-      "item": "finaldimensionmod:phantom_silk"
+      "item": "finaldimensionmod:lithium"
     }
   },
   "result": {
-    "item": "finaldimensionmod:empty_seal",
+    "item": "finaldimensionmod:lithium_block",
     "count": 1
   }
 }

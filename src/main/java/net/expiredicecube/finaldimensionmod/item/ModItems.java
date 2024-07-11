@@ -38,13 +38,16 @@ public class ModItems {
     public static final RegistryObject<Item> JADE = ITEMS.register("jade",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> LITHIUM = ITEMS.register("lithium",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> OVERITE_INGOT = ITEMS.register("overite_ingot",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> PHANTOM_SILK = ITEMS.register("phantom_silk",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> RAW_JADE = ITEMS.register("raw_jade",
+    public static final RegistryObject<Item> RAW_LITHIUM = ITEMS.register("raw_lithium",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> SEAL_FRAGMENT = ITEMS.register("seal_fragment",

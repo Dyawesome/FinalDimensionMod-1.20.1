@@ -1,7 +1,8 @@
 {
   "values": [
     "finaldimensionmod:glistening_obsidian",
-    "finaldimensionmod:raw_jade_block",
-    "finaldimensionmod:jade_block"
+    "finaldimensionmod:jade_block",
+    "finaldimensionmod:lithium_block",
+    "finaldimensionmod:raw_lithium_block"
   ]
 }

@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "finaldimensionmod:raw_jade"
+      "item": "finaldimensionmod:raw_lithium"
     }
   },
   "result": {
-    "item": "finaldimensionmod:raw_jade_block",
+    "item": "finaldimensionmod:raw_lithium_block",
     "count": 1
   }
 }

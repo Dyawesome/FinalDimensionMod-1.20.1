@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "finaldimensionmod:lithium_block"
+    }
+  ],
+  "result": {
+    "item": "finaldimensionmod:lithium",
+    "count": 9
+  }
+}

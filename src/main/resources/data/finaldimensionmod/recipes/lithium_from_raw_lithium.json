@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.8,
+  "group": "lithium",
+  "ingredient": {
+    "item": "finaldimensionmod:raw_lithium"
+  },
+  "result": "finaldimensionmod:lithium"
+}
