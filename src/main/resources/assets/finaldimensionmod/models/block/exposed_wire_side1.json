@@ -1,6 +1,0 @@
-{
-  "parent": "finaldimensionmod:block/exposed_wire_side",
-  "textures": {
-    "line": "finaldimensionmod:block/exposed_wire_line1"
-  }
-}
