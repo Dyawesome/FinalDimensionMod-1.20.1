@@ -32,6 +32,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.PHANTOM_SILK.get());
                         output.accept(ModItems.RAW_LITHIUM.get());
                         output.accept(ModItems.SEAL_FRAGMENT.get());
+                        output.accept(ModItems.IMPELLO.get());
 
                         output.accept(ModBlocks.GLISTENING_OBSIDIAN.get());
                         output.accept(ModBlocks.JADE_BLOCK.get());

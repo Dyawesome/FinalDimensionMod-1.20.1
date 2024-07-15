@@ -2,6 +2,7 @@ package net.expiredicecube.finaldimensionmod.item;
 
 import net.expiredicecube.finaldimensionmod.FinalDimensionMod;
 import net.expiredicecube.finaldimensionmod.block.ModBlocks;
+import net.expiredicecube.finaldimensionmod.item.custom.ImpelloItem;
 import net.minecraft.world.item.EnderpearlItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -52,6 +53,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> SEAL_FRAGMENT = ITEMS.register("seal_fragment",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> IMPELLO = ITEMS.register("impello",
+            ()-> new ImpelloItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

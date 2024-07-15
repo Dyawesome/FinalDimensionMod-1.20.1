@@ -1,19 +1,46 @@
 {
-  "variants": {
-    "facing=north": {
-      "model": "finaldimensionmod:block/exposed_wire_wire"
+  "multipart": [
+    {
+      "apply": {
+        "model": "finaldimensionmod:block/exposed_wire_dot"
+      },
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "west": "false"
+      }
     },
-    "facing=south": {
-      "model": "finaldimensionmod:block/exposed_wire_wire",
-      "y": 180
+    {
+      "apply": {
+        "model": "finaldimensionmod:block/exposed_wire_wire"
+      },
+      "when": {
+        "OR": [
+          {
+          "north": "true"
+          },
+          {
+            "south": "true"
+          }
+        ]
+      }
     },
-    "facing=west": {
-      "model": "finaldimensionmod:block/exposed_wire_wire",
-      "y": 270
-    },
-    "facing=east": {
-      "model": "finaldimensionmod:block/exposed_wire_wire",
-      "y": 90
+    {
+      "apply": {
+        "model": "finaldimensionmod:block/exposed_wire_wire",
+        "y": 90
+      },
+      "when": {
+        "OR": [
+          {
+            "east": "true"
+          },
+          {
+            "west": "true"
+          }
+        ]
+      }
     }
-  }
+  ]
 }
