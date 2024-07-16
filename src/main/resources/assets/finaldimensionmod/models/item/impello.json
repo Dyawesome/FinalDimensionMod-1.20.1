@@ -1,6 +1,18 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "finaldimensionmod:item/impello"
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "finaldimensionmod:item/impello_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "finaldimensionmod:item/impello_2d"
+    },
+    "ground": {
+      "parent": "finaldimensionmod:item/impello_2d"
+    },
+    "fixed": {
+      "parent": "finaldimensionmod:item/impello_2d"
+    }
   }
 }

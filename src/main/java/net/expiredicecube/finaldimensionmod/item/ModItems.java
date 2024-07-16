@@ -55,7 +55,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> IMPELLO = ITEMS.register("impello",
-            ()-> new ImpelloItem(new Item.Properties()));
+            ()-> new ImpelloItem(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
