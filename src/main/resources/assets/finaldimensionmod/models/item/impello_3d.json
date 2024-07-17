@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "finaldimensionmod:item/center_whole",
-		"1": "finaldimensionmod:item/floats",
-		"2": "finaldimensionmod:item/diagonals",
-		"particle": "finaldimensionmod:item/center_whole"
+		"0": "finaldimensionmod:item/impello_center_whole",
+		"1": "finaldimensionmod:item/impello_floats",
+		"2": "finaldimensionmod:item/impello_diagonals",
+		"particle": "finaldimensionmod:item/impello_center_whole"
 	},
 	"elements": [
 		{

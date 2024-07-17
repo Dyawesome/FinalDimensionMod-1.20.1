@@ -26,13 +26,15 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.EMPTY_SEAL.get());
                         output.accept(ModItems.ENHANCED_PEARL.get());
                         output.accept(ModItems.EXPOSED_WIRE.get());
+                        output.accept(ModItems.IMPELLO.get());
                         output.accept(ModItems.JADE.get());
                         output.accept(ModItems.LITHIUM.get());
                         output.accept(ModItems.OVERITE_INGOT.get());
                         output.accept(ModItems.PHANTOM_SILK.get());
                         output.accept(ModItems.RAW_LITHIUM.get());
                         output.accept(ModItems.SEAL_FRAGMENT.get());
-                        output.accept(ModItems.IMPELLO.get());
+
+                        output.accept(ModItems.AMBROSIA_GEL.get());
 
                         output.accept(ModBlocks.GLISTENING_OBSIDIAN.get());
                         output.accept(ModBlocks.JADE_BLOCK.get());

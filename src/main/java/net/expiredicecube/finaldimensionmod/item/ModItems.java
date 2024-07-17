@@ -36,6 +36,9 @@ public class ModItems {
     public static final RegistryObject<Item> EXPOSED_WIRE = ITEMS.register("exposed_wire",
             () -> new ItemNameBlockItem(ModBlocks.EXPOSED_WIRE_WIRE.get(), new Item.Properties()));
 
+    public static final RegistryObject<Item> IMPELLO = ITEMS.register("impello",
+            ()-> new ImpelloItem(new Item.Properties().stacksTo(1)));
+
     public static final RegistryObject<Item> JADE = ITEMS.register("jade",
             () -> new Item(new Item.Properties()));
 
@@ -54,8 +57,10 @@ public class ModItems {
     public static final RegistryObject<Item> SEAL_FRAGMENT = ITEMS.register("seal_fragment",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> IMPELLO = ITEMS.register("impello",
-            ()-> new ImpelloItem(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> AMBROSIA_GEL = ITEMS.register("ambrosia_gel",
+            ()-> new Item(new Item.Properties().food(ModFoods.AMBROSIA_GEL)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

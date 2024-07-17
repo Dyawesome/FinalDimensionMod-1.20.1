@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "finaldimensionmod:block/copper_wire",
-		"1": "finaldimensionmod:block/gold_wire",
-		"particle": "finaldimensionmod:block/copper_wire"
+		"0": "finaldimensionmod:block/exposed_copper_wire",
+		"1": "finaldimensionmod:block/exposed_gold_wire",
+		"particle": "finaldimensionmod:block/exposed_copper_wire"
 	},
 	"elements": [
 		{
