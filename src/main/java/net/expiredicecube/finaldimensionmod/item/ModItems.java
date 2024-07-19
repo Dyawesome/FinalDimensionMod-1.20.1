@@ -2,6 +2,7 @@ package net.expiredicecube.finaldimensionmod.item;
 
 import net.expiredicecube.finaldimensionmod.FinalDimensionMod;
 import net.expiredicecube.finaldimensionmod.block.ModBlocks;
+import net.expiredicecube.finaldimensionmod.item.custom.FuelItem;
 import net.expiredicecube.finaldimensionmod.item.custom.ImpelloItem;
 import net.minecraft.world.item.EnderpearlItem;
 import net.minecraft.world.item.Item;
@@ -60,6 +61,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> AMBROSIA_GEL = ITEMS.register("ambrosia_gel",
             ()-> new Item(new Item.Properties().food(ModFoods.AMBROSIA_GEL)));
+
+
+    public static final RegistryObject<Item> COKECOAL = ITEMS.register("cokecoal",
+            ()-> new FuelItem(new Item.Properties(), 3200));
 
 
     public static void register(IEventBus eventBus) {

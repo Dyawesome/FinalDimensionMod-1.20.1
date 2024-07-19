@@ -60,6 +60,11 @@ public class FinalDimensionMod {
             event.accept(ModItems.SEAL_FRAGMENT);
             event.accept(ModItems.IMPELLO);
 
+            event.accept(ModItems.AMBROSIA_GEL);
+
+            event.accept(ModItems.COKECOAL);
+
+
             event.accept(ModBlocks.GLISTENING_OBSIDIAN);
             event.accept(ModBlocks.JADE_BLOCK);
             event.accept(ModBlocks.LITHIUM_BLOCK);

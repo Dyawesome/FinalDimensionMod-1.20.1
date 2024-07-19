@@ -36,6 +36,8 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.AMBROSIA_GEL.get());
 
+                        output.accept(ModItems.COKECOAL.get());
+
                         output.accept(ModBlocks.GLISTENING_OBSIDIAN.get());
                         output.accept(ModBlocks.JADE_BLOCK.get());
                         output.accept(ModBlocks.LITHIUM_BLOCK.get());
