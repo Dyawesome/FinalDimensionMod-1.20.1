@@ -2,8 +2,11 @@ package net.expiredicecube.finaldimensionmod;
 
 import com.mojang.logging.LogUtils;
 import net.expiredicecube.finaldimensionmod.block.ModBlocks;
+import net.expiredicecube.finaldimensionmod.entity.ModEntities;
 import net.expiredicecube.finaldimensionmod.item.ModCreativeModTabs;
 import net.expiredicecube.finaldimensionmod.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,6 +19,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import software.bernie.geckolib.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(FinalDimensionMod.MOD_ID)
@@ -30,8 +34,11 @@ public class FinalDimensionMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+
+        GeckoLib.initialize();
 
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -64,6 +71,7 @@ public class FinalDimensionMod {
 
             event.accept(ModItems.COKECOAL);
 
+            event.accept(ModItems.SEALED_CONDUIT);
 
             event.accept(ModBlocks.GLISTENING_OBSIDIAN);
             event.accept(ModBlocks.JADE_BLOCK);
@@ -84,6 +92,8 @@ public class FinalDimensionMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
+            EntityRenderers.register(ModEntities.SEALED_CONDUIT.get(), ThrownItemRenderer::new);
 
         }
     }

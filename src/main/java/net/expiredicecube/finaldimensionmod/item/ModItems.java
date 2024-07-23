@@ -4,6 +4,7 @@ import net.expiredicecube.finaldimensionmod.FinalDimensionMod;
 import net.expiredicecube.finaldimensionmod.block.ModBlocks;
 import net.expiredicecube.finaldimensionmod.item.custom.FuelItem;
 import net.expiredicecube.finaldimensionmod.item.custom.ImpelloItem;
+import net.expiredicecube.finaldimensionmod.item.custom.SealedConduitItem;
 import net.minecraft.world.item.EnderpearlItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -38,7 +39,7 @@ public class ModItems {
             () -> new ItemNameBlockItem(ModBlocks.EXPOSED_WIRE_WIRE.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> IMPELLO = ITEMS.register("impello",
-            ()-> new ImpelloItem(new Item.Properties().stacksTo(1)));
+            ()-> new ImpelloItem(new Item.Properties()));
 
     public static final RegistryObject<Item> JADE = ITEMS.register("jade",
             () -> new Item(new Item.Properties()));
@@ -65,6 +66,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> COKECOAL = ITEMS.register("cokecoal",
             ()-> new FuelItem(new Item.Properties(), 3200));
+
+
+    public static final RegistryObject<Item> SEALED_CONDUIT = ITEMS.register("sealed_conduit",
+            ()-> new SealedConduitItem(new Item.Properties()));
+
+
 
 
     public static void register(IEventBus eventBus) {
