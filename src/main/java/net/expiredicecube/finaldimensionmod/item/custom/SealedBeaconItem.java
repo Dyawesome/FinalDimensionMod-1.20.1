@@ -1,7 +1,7 @@
 package net.expiredicecube.finaldimensionmod.item.custom;
 
-import net.expiredicecube.finaldimensionmod.entity.custom.SealedConduitProjectileEntity;
-import net.expiredicecube.finaldimensionmod.item.client.SealedConduitItemRenderer;
+import net.expiredicecube.finaldimensionmod.entity.custom.SealedBeaconProjectileEntity;
+import net.expiredicecube.finaldimensionmod.item.client.SealedBeaconItemRenderer;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -22,7 +22,7 @@ import software.bernie.geckolib.util.RenderUtils;
 
 import java.util.function.Consumer;
 
-public class SealedConduitItem extends Item implements GeoItem {
+public class SealedBeaconItem extends Item implements GeoItem {
 
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
@@ -31,11 +31,11 @@ public class SealedConduitItem extends Item implements GeoItem {
         pLevel.playSound((Player)null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
                 SoundEvents.EXPERIENCE_BOTTLE_THROW, SoundSource.NEUTRAL, 0.5F, 0.4F / (pLevel.getRandom().nextFloat() * 0.4F + 0.8F));
         if (!pLevel.isClientSide) {
-            
-            SealedConduitProjectileEntity sealed_conduit = new SealedConduitProjectileEntity(pLevel, pPlayer);
-            sealed_conduit.setItem($$3);
-            sealed_conduit.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, 1.5F, 1.0F);
-            pLevel.addFreshEntity(sealed_conduit);
+
+            SealedBeaconProjectileEntity sealed_beacon = new SealedBeaconProjectileEntity(pLevel, pPlayer);
+            sealed_beacon.setItem($$3);
+            sealed_beacon.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, 1.5F, 1.0F);
+            pLevel.addFreshEntity(sealed_beacon);
         }
 
         pPlayer.awardStat(Stats.ITEM_USED.get(this));
@@ -46,12 +46,12 @@ public class SealedConduitItem extends Item implements GeoItem {
         return InteractionResultHolder.sidedSuccess($$3, pLevel.isClientSide());
     }
 
-    public SealedConduitItem(Properties pProperties) {
+    public SealedBeaconItem(Properties pProperties) {
         super(pProperties);
     }
 
     private PlayState predicate(AnimationState animationState) {
-        animationState.getController().setAnimation(RawAnimation.begin().then("conduit", Animation.LoopType.LOOP));
+        animationState.getController().setAnimation(RawAnimation.begin().then("beacon", Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
     }
 
@@ -73,12 +73,12 @@ public class SealedConduitItem extends Item implements GeoItem {
     @Override
     public void initializeClient(Consumer<IClientItemExtensions> consumer) {
         consumer.accept(new IClientItemExtensions() {
-            private SealedConduitItemRenderer renderer;
+            private SealedBeaconItemRenderer renderer;
 
             @Override
             public BlockEntityWithoutLevelRenderer getCustomRenderer() {
                 if(this.renderer == null) {
-                    renderer = new SealedConduitItemRenderer();
+                    renderer = new SealedBeaconItemRenderer();
                 }
                 return this.renderer;
             }

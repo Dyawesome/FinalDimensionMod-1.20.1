@@ -72,6 +72,7 @@ public class FinalDimensionMod {
             event.accept(ModItems.COKECOAL);
 
             event.accept(ModItems.SEALED_CONDUIT);
+            event.accept(ModItems.SEALED_BEACON);
 
             event.accept(ModBlocks.GLISTENING_OBSIDIAN);
             event.accept(ModBlocks.JADE_BLOCK);
@@ -94,6 +95,7 @@ public class FinalDimensionMod {
         public static void onClientSetup(FMLClientSetupEvent event) {
 
             EntityRenderers.register(ModEntities.SEALED_CONDUIT.get(), ThrownItemRenderer::new);
+            EntityRenderers.register(ModEntities.SEALED_BEACON.get(), ThrownItemRenderer::new);
 
         }
     }

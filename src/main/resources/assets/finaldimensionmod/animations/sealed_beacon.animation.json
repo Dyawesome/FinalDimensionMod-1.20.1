@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"beacon": {
+			"animation_length": 1.5,
+			"bones": {
+				"beacon": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.5": {
+							"vector": [0, 360, 360],
+							"easing": "step",
+							"easingArgs": [45]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

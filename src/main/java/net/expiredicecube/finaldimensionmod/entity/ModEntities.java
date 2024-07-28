@@ -1,6 +1,7 @@
 package net.expiredicecube.finaldimensionmod.entity;
 
 import net.expiredicecube.finaldimensionmod.FinalDimensionMod;
+import net.expiredicecube.finaldimensionmod.entity.custom.SealedBeaconProjectileEntity;
 import net.expiredicecube.finaldimensionmod.entity.custom.SealedConduitProjectileEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -17,6 +18,10 @@ public class ModEntities {
     public static final RegistryObject<EntityType<SealedConduitProjectileEntity>> SEALED_CONDUIT =
             ENTITY_TYPES.register("sealed_conduit", ()->EntityType.Builder.<SealedConduitProjectileEntity>of(SealedConduitProjectileEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("sealed_conduit"));
+
+    public static final RegistryObject<EntityType<SealedBeaconProjectileEntity>> SEALED_BEACON =
+            ENTITY_TYPES.register("sealed_beacon", ()->EntityType.Builder.<SealedBeaconProjectileEntity>of(SealedBeaconProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f).build("sealed_beacon"));
 
 
     public static void register(IEventBus eventBus){ENTITY_TYPES.register(eventBus);}

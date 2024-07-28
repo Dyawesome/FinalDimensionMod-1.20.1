@@ -22,25 +22,25 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 
-public class SealedConduitProjectileEntity extends ThrowableItemProjectile implements ItemSupplier {
+public class SealedBeaconProjectileEntity extends ThrowableItemProjectile implements ItemSupplier {
 
-    private Item dropItem = Items.CONDUIT;
+    private Item dropItem = Items.BEACON;
 
-    public SealedConduitProjectileEntity(EntityType<? extends ThrowableItemProjectile> pEntityType, Level pLevel) {
+    public SealedBeaconProjectileEntity(EntityType<? extends ThrowableItemProjectile> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
 
-    public SealedConduitProjectileEntity(Level pLevel) {
-        super(ModEntities.SEALED_CONDUIT.get(), pLevel);
+    public SealedBeaconProjectileEntity(Level pLevel) {
+        super(ModEntities.SEALED_BEACON.get(), pLevel);
     }
 
-    public SealedConduitProjectileEntity(Level pLevel, LivingEntity livingEntity) {
-        super(ModEntities.SEALED_CONDUIT.get(), livingEntity, pLevel);
+    public SealedBeaconProjectileEntity(Level pLevel, LivingEntity livingEntity) {
+        super(ModEntities.SEALED_BEACON.get(), livingEntity, pLevel);
     }
 
     @Override
     protected Item getDefaultItem() {
-        return ModItems.SEALED_CONDUIT.get();
+        return ModItems.SEALED_BEACON.get();
     }
 
     @Override

@@ -4,6 +4,7 @@ import net.expiredicecube.finaldimensionmod.FinalDimensionMod;
 import net.expiredicecube.finaldimensionmod.block.ModBlocks;
 import net.expiredicecube.finaldimensionmod.item.custom.FuelItem;
 import net.expiredicecube.finaldimensionmod.item.custom.ImpelloItem;
+import net.expiredicecube.finaldimensionmod.item.custom.SealedBeaconItem;
 import net.expiredicecube.finaldimensionmod.item.custom.SealedConduitItem;
 import net.minecraft.world.item.EnderpearlItem;
 import net.minecraft.world.item.Item;
@@ -70,6 +71,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> SEALED_CONDUIT = ITEMS.register("sealed_conduit",
             ()-> new SealedConduitItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> SEALED_BEACON = ITEMS.register("sealed_beacon",
+            ()-> new SealedBeaconItem(new Item.Properties()));
 
 
 
