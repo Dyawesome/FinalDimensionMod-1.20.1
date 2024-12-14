@@ -45,6 +45,7 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.JADE_BLOCK.get());
                         output.accept(ModBlocks.LITHIUM_BLOCK.get());
                         output.accept(ModBlocks.RAW_LITHIUM_BLOCK.get());
+                        output.accept(ModBlocks.BETA_NEXUS.get());
 
                     })
                     .build());

@@ -1,12 +1,14 @@
 package net.expiredicecube.finaldimensionmod.block;
 
 import net.expiredicecube.finaldimensionmod.FinalDimensionMod;
+import net.expiredicecube.finaldimensionmod.block.custom.NexusBlock;
 import net.expiredicecube.finaldimensionmod.block.custom.WireBlock;
 import net.expiredicecube.finaldimensionmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.RedstoneLampBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -34,6 +36,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RAW_LITHIUM_BLOCK = registerBlock("raw_lithium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+
+    public static final RegistryObject<Block> BETA_NEXUS = registerBlock("beta_nexus",
+            () -> new RedstoneLampBlock(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+
+    /*public static final RegistryObject<Block> NEXUS = registerBlock("nexus",
+            () -> new NexusBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));*/
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

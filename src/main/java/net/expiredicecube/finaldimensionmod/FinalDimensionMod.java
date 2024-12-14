@@ -78,6 +78,7 @@ public class FinalDimensionMod {
             event.accept(ModBlocks.JADE_BLOCK);
             event.accept(ModBlocks.LITHIUM_BLOCK);
             event.accept(ModBlocks.RAW_LITHIUM_BLOCK);
+            event.accept(ModBlocks.BETA_NEXUS);
 
         }
     }

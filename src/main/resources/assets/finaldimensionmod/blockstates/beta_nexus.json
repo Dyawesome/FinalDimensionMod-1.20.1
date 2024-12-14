@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "finaldimensionmod:block/beta_nexus"
+    },
+    "lit=true": {
+      "model": "finaldimensionmod:block/beta_nexus_on"
+    }
+  }
+}

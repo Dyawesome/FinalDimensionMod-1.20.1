@@ -1,0 +1,7 @@
+// 1.20.1	2024-12-13T20:23:22.3822691	Tags for minecraft:block mod id finaldimensionmod
+31b3decc8a777dedc3a5cf29d62a861d09d6af02 data/finaldimensionmod/tags/blocks/portal_blocks.json
+2ab0bef4e60a5ca616e3fed3de5542f04f91731d data/forge/tags/blocks/needs_netherite_tool.json
+8f551046a51b3ef26484eeea013a06f3f1251e61 data/minecraft/tags/blocks/mineable/pickaxe.json
+51d6f4cbbfe2b5d79da79b5b7b41f2fe3f30a1e2 data/minecraft/tags/blocks/needs_diamond_tool.json
+ecb95d4d89ce1a89bcefb205967576c09cb70c47 data/minecraft/tags/blocks/needs_iron_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_stone_tool.json
